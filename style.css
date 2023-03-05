@@ -1,0 +1,86 @@
+:root {
+	--primary-color: #FFC107;
+	--secondary-color: #7B1FA2;
+	--text-color: #333;
+}
+
+body {
+	background-color: #f5f5f5;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: var(--primary-color);
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 200px);
+}
+
+.converter {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	max-width: 400px;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.converter label {
+	color: var(--text-color);
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+.converter input {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.2);
+	font-size: 16px;
+	margin-right: 10px;
+	padding: 10px;
+	width: 150px;
+}
+
+.converter button {
+	background-color: var(--primary-color);
+	border: none;
+	border-radius: 4px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 10px;
+	transition: all 0.2s ease-in-out;
+}
+
+.converter button:hover {
+	background-color: #FFA000;
+}
+
+.converter input[readonly] {
+	background-color: #eee;
+	cursor: default;
+}
+footer {
+	background-color: var(--secondary-color);
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
